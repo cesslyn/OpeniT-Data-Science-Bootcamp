@@ -1,0 +1,39 @@
+id,task_type,split,input_text,target_text,label
+001,encoder_classification,train,The model finished training faster than expected.,,positive
+002,encoder_classification,train,The validation loss kept increasing after epoch three.,,negative
+003,encoder_classification,train,The tokenizer loaded with the default settings.,,neutral
+004,encoder_classification,train,The inference results were accurate and consistent.,,positive
+005,encoder_classification,train,The decoder repeated the same phrase many times.,,negative
+006,encoder_classification,train,The batch size was set to eight examples.,,neutral
+007,encoder_classification,train,The encoder handled long sentences gracefully.,,positive
+008,encoder_classification,train,The GPU ran out of memory during training.,,negative
+009,encoder_classification,validation,The checkpoint was saved after each epoch.,,neutral
+010,encoder_classification,validation,The attention visualization made the lesson clearer.,,positive
+011,encoder_classification,test,The generated answer ignored the instruction.,,negative
+012,encoder_classification,test,The dataset contains inputs and targets.,,neutral
+013,encoder_decoder_summarization,train,Transformers use attention to compare every token with every other token in a sequence. This makes it easier to capture long range relationships than a simple recurrent model.,Transformers use attention to model long range token relationships.,
+014,encoder_decoder_summarization,train,"An encoder reads the full input sequence at once and produces contextual representations. Encoder-only models are often used for classification, tagging, retrieval, and embedding tasks.",Encoders produce contextual input representations for understanding tasks.,
+015,encoder_decoder_summarization,train,A decoder generates tokens one at a time while masking future positions. Decoder-only models are commonly used for text completion and chat style generation.,Decoders generate masked next tokens for text generation.,
+016,encoder_decoder_summarization,train,"An encoder-decoder model first encodes the source text and then decodes the target text. This design is useful for translation, summarization, and other sequence-to-sequence tasks.",Encoder-decoder models support sequence-to-sequence generation.,
+017,encoder_decoder_summarization,train,Teacher forcing trains a decoder by providing the previous gold target token as input. At inference time the model must use its own previously generated tokens instead.,Teacher forcing uses gold previous tokens during decoder training.,
+018,encoder_decoder_summarization,train,Positional information is needed because attention alone does not know token order. Models add learned or fixed position signals to token embeddings.,Position signals help attention understand token order.,
+019,encoder_decoder_summarization,train,Multi-head attention lets a model learn several attention patterns in parallel. Some heads may focus on syntax while others capture semantic or positional cues.,Multi-head attention learns several parallel attention patterns.,
+020,encoder_decoder_summarization,validation,The feed-forward block applies the same small neural network to each token representation. It adds non-linear transformations after attention mixing.,Feed-forward blocks transform each token after attention.,
+021,encoder_decoder_summarization,validation,"During inference, greedy decoding always picks the most likely next token. Beam search keeps several candidate sequences and often produces stronger outputs.",Beam search keeps multiple candidates during generation.,
+022,encoder_decoder_summarization,test,Padding tokens should be masked so the model does not treat them as real content. Padding masks are especially important when examples in a batch have different lengths.,Padding masks prevent attention to padded positions.,
+023,encoder_decoder_translation,train,Translate to pseudo-code: add two numbers and return the result.,"function add(a, b): return a + b",
+024,encoder_decoder_translation,train,Translate to pseudo-code: check whether a number is even.,function is_even(n): return n mod 2 equals 0,
+025,encoder_decoder_translation,train,Translate to pseudo-code: find the largest value in a list.,function max_value(xs): keep the largest item seen,
+026,encoder_decoder_translation,train,Translate to pseudo-code: count the words in a sentence.,function count_words(text): split text and count tokens,
+027,encoder_decoder_translation,train,Translate to pseudo-code: reverse a string.,function reverse(text): return characters in opposite order,
+028,encoder_decoder_translation,train,Translate to pseudo-code: filter scores above eighty.,function high_scores(scores): keep scores greater than 80,
+029,encoder_decoder_translation,validation,Translate to pseudo-code: convert Celsius to Fahrenheit.,function f(c): return c * 9 / 5 + 32,
+030,encoder_decoder_translation,test,Translate to pseudo-code: compute the average of values.,function average(xs): return sum(xs) divided by count(xs),
+031,decoder_generation,train,Write one sentence about self-attention.,Self-attention lets each token gather information from other tokens in the same sequence.,
+032,decoder_generation,train,Write one sentence about causal masking.,Causal masking prevents a decoder from seeing future tokens during generation.,
+033,decoder_generation,train,Write one sentence about embeddings.,Embeddings turn discrete tokens into vectors that a neural network can process.,
+034,decoder_generation,train,Write one sentence about fine-tuning.,Fine-tuning adapts a pretrained transformer to a narrower dataset or task.,
+035,decoder_generation,train,Write one sentence about inference.,Inference uses a trained model to produce predictions or generated text.,
+036,decoder_generation,train,Write one sentence about cross-attention.,Cross-attention lets a decoder attend to encoder outputs while generating a target sequence.,
+037,decoder_generation,validation,Write one sentence about evaluation.,Evaluation measures how well a model performs on data it did not train on.,
+038,decoder_generation,test,Write one sentence about tokenization.,"Tokenization splits text into units such as words, subwords, or characters.",

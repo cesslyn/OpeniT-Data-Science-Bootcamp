@@ -1,0 +1,9 @@
+month,region,product_category,revenue,units_sold,customer_satisfaction
+2025-01-01,North,Software,12000,120,4.1
+2025-02-01,South,Hardware,9500,85,3.8
+2025-03-01,North,Software,14200,140,4.3
+2025-04-01,East,Services,11000,95,4.0
+2025-05-01,West,Software,13500,130,4.2
+2025-06-01,South,Hardware,10200,90,3.9
+2025-07-01,East,Services,15100,150,4.4
+2025-08-01,West,Software,16400,160,4.5
